@@ -47,7 +47,7 @@ export default function HeroSection() {
             className="w-80 h-80 mx-auto mb-8 relative"
           >
             <Image
-              src="/logo-central.png"
+              src="/LOGO-CENTRAL.png"
               alt="EXPERTIS Logo"
               width={300}
               height={300}
