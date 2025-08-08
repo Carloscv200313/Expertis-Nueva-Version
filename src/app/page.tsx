@@ -22,10 +22,10 @@ export default function Home() {
       <div className="fixed inset-0 z-0">
         <BentoGridBackground />
       </div>
-      
+
       {/* Navigation */}
       <Navigation />
-      
+
       {/* Main Content */}
       <main className="relative z-10">
         <HeroSection />
@@ -37,21 +37,13 @@ export default function Home() {
         <ContactSection />
         <Footer />
       </main>
-      
       {/* Enhanced Scroll Progress Indicator */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 z-50 origin-left"
         style={{ scaleX: scrollYProgress }}
       >
         <div className="h-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 relative">
-          {/* Glowing effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 blur-sm opacity-75" />
-          {/* Moving light effect 
-          <motion.div
-            className="absolute top-0 w-20 h-full bg-white/30 blur-sm"
-            animate={{ x: [-80, window.innerWidth] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          />*/}
         </div>
       </motion.div>
     </div>

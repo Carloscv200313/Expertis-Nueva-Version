@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,16 +28,9 @@ export default function Navigation() {
   return (
     <motion.nav
       initial={{ y: 0 }}
-      animate={{
-        y: 0,
-        paddingLeft: scrolled ? '0rem' : '0rem',
-        paddingRight: scrolled ? '0rem' : '0rem',
-        top: scrolled ? '0rem' : '0rem',
-        left: scrolled ? '0rem' : '0rem',
-        right: scrolled ? '0rem' : '0rem'
-      }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-      className={`fixed z-40 transition-all duration-400 ${scrolled
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 2.5, ease: "easeInOut" }}
+      className={`fixed w-full z-40 transition-all duration-100 ${scrolled
         ? 'bg-black/30 backdrop-blur-md border-b border-slate-800 py-2 shadow-2xl w-auto'
         : 'bg-transparent py-2'
         }`}
@@ -49,15 +43,16 @@ export default function Navigation() {
           transition={{ duration: 0.3 }}
           className="flex items-center"
         >
-          <Image
-            src="/LOGO-EXPERTIS-1.png"
-            alt="EXPERTIS Icon"
-            width={300}
-            height={300}
-            className="w-auto h-10"
-          />
+          <Link href={"/"}>
+            <Image
+              src="/LOGO-EXPERTIS-1.png"
+              alt="EXPERTIS Icon"
+              width={300}
+              height={300}
+              className="w-auto h-10"
+            />
+          </Link>
         </motion.div>
-
         <div className={`hidden md:flex space-x-8`}>
           {navItems.map((item, index) => (
             <motion.a
@@ -65,13 +60,13 @@ export default function Navigation() {
               href={item.href}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.4 }}
               whileHover={{
                 scale: 1.02,
                 y: -2,
-
+                transitionDelay: 0.5
               }}
-              className={` text-lg relative text-slate-300  transition-all duration-100 px-2 py-2 `}
+              className={`text-lg relative text-slate-300  ${scrolled ? "hover:text-[#01c9f0]" : "hover:text-slate-50"} transition-all duration-75 px-2 py-2 `}
             >
               {item.name}
             </motion.a>
