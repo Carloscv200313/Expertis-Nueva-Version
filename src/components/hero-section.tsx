@@ -37,20 +37,20 @@ export default function HeroSection() {
             animate={{
               scale: [1, 1.03, 1], // Animación de palpitar que se repite
               transition: {
-                delay: 1.5, // Espera a que termine la primera animación
+                delay: 4,
                 duration: 2,
                 repeat: Infinity, // Se repite indefinidamente
                 repeatType: "reverse",
                 ease: "easeInOut"
               }
             }}
-            className="w-64 h-64 mx-auto mb-8 relative"
+            className="w-80 h-80 mx-auto mb-8 relative"
           >
             <Image
               src="/logo-central.png"
               alt="EXPERTIS Logo"
-              width={192}
-              height={192}
+              width={300}
+              height={300}
               className="w-full h-full object-contain drop-shadow-2xl"
             />
           </motion.div>
@@ -62,17 +62,20 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
-        <motion.a
-          animate={{ y: [0, 10, 0] }}
-          href={"#about"}
-          transition={{ duration: 1, repeat: Infinity }}
-          className="text-cyan-400 drop-shadow-lg"
+        <motion.div
+          animate={{ y: [0, 10, 0] }} // ⬅ más movimiento
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="text-cyan-200 drop-shadow-lg"
         >
-          <ChevronDown size={32} />
-        </motion.a>
+          <a href="#about" className='flex flex-col items-center'>
+            <ChevronDown size={40} className='translate-y-7 opacity-40' />
+            <ChevronDown size={40} />
+          </a>
+        </motion.div>
       </motion.div>
+
     </section>
   )
 }

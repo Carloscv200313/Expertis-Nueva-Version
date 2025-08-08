@@ -62,7 +62,7 @@ export default function ContactSection() {
             {/* Contact Image */}
             <div className="mb-8 relative overflow-hidden rounded-2xl">
               <Image
-                src="/images/contacta.png"
+                src="/IMAGEN-CENTRAL-CONTACTA.png"
                 alt="Contacta con EXPERTIS"
                 width={800}
                 height={400}

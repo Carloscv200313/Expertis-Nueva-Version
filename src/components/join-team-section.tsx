@@ -116,7 +116,7 @@ export default function JoinTeamSection() {
             {/* Main Image */}
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src="/images/unete.png"
+                src="/IMAGEN-OPORTUNIDAD-UNETE.png"
                 alt="Únete al equipo EXPERTIS"
                 width={800}
                 height={500}
@@ -128,7 +128,7 @@ export default function JoinTeamSection() {
             {/* Secondary Image */}
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src="/images/oportunidad.png"
+                src="/IMAGEN-CALL-CENTER.jpg"
                 alt="Oportunidades en EXPERTIS"
                 width={800}
                 height={400}

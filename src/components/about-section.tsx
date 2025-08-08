@@ -8,7 +8,7 @@ export default function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
-  
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"]
@@ -35,13 +35,15 @@ export default function AboutSection() {
               className="relative overflow-hidden rounded-2xl"
             >
               <Image
-                src="/COLABORADORES.png"
+                src="/COLABORADORES-1.png"
                 alt="Equipo EXPERTIS"
-                width={800}
-                height={600}
+                width={1600}
+                height={1800}
+                unoptimized
                 className="w-full h-auto object-cover"
+                quality={100}
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-slate-800/50 to-slate-900/50" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-slate-800/20 to-slate-900/30" />
             </motion.div>
           </motion.div>
 
@@ -67,8 +69,8 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-slate-300 leading-relaxed"
             >
-              En EXPERTIS somos especialistas en servicios de cobranza y gestión empresarial. 
-              Nuestro equipo altamente capacitado se dedica a brindar soluciones integrales 
+              En EXPERTIS somos especialistas en servicios de cobranza y gestión empresarial.
+              Nuestro equipo altamente capacitado se dedica a brindar soluciones integrales
               que optimizan los procesos de nuestros clientes y maximizan sus resultados.
             </motion.p>
 
@@ -78,8 +80,8 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-slate-300 leading-relaxed"
             >
-              Con años de experiencia en el mercado, hemos desarrollado metodologías 
-              innovadoras que nos permiten ofrecer un servicio de calidad superior, 
+              Con años de experiencia en el mercado, hemos desarrollado metodologías
+              innovadoras que nos permiten ofrecer un servicio de calidad superior,
               siempre enfocados en la excelencia y la satisfacción del cliente.
             </motion.p>
 

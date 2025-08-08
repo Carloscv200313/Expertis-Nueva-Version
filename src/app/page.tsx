@@ -1,5 +1,4 @@
 'use client'
-
 import { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import HeroSection from '@/components/hero-section'

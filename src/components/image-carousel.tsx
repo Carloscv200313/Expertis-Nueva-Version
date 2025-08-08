@@ -7,32 +7,32 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const images = [
   {
-    src: '/images/equipo-completo.png',
+    src: '/IMAGEN-NEGOCIO-EXPERIENCIA.jpg',
     alt: 'Equipo completo EXPERTIS',
     title: 'Nuestro Equipo'
   },
   {
-    src: '/images/contacta.png',
+    src: '/IMAGEN-NEGOCIO-EXPERIENCIA.jpg',
     alt: 'Contacta con EXPERTIS',
     title: 'Contáctanos'
   },
   {
-    src: '/images/experiencia.png',
+    src: '/IMAGEN-NEGOCIO-EXPERIENCIA.jpg',
     alt: 'Experiencia EXPERTIS',
     title: 'Nuestra Experiencia'
   },
   {
-    src: '/images/unete.png',
+    src: '/IMAGEN-NEGOCIO-EXPERIENCIA.jpg',
     alt: 'Únete al equipo EXPERTIS',
     title: 'Únete al Equipo'
   },
   {
-    src: '/images/oportunidad.png',
+    src: '/IMAGEN-NEGOCIO-EXPERIENCIA.jpg',
     alt: 'Oportunidades en EXPERTIS',
     title: 'Oportunidades'
   },
   {
-    src: '/images/IMAGEN-CENTRAL-NOSOTROS.jpg',
+    src: '/IMAGEN-NEGOCIO-EXPERIENCIA.jpg',
     alt: 'Nosotros EXPERTIS',
     title: 'Acerca de Nosotros'
   }

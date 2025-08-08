@@ -45,7 +45,7 @@ export default function ExperienceSection() {
       {/* Background Image for the section */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/experiencia.png"
+          src="/IMAGEN-NEGOCIO-EXPERIENCIA.jpg"
           alt="Experiencia EXPERTIS Background"
           fill
           className="object-cover object-center"

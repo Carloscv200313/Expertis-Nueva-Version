@@ -23,7 +23,7 @@ export default function Footer() {
               className="mb-6"
             >
               <Image
-                src="/images/logo-footer.png"
+                src="/IMAGEN-EXPERTIS-FLOOTER.png"
                 alt="EXPERTIS Logo"
                 width={200}
                 height={80}
