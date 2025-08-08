@@ -63,8 +63,7 @@ export default function Navigation() {
               transition={{ delay: index * 0.4 }}
               whileHover={{
                 scale: 1.02,
-                y: -2,
-                transitionDelay: 0.5
+                y: -2
               }}
               className={`text-lg relative text-slate-300  ${scrolled ? "hover:text-[#01c9f0]" : "hover:text-slate-50"} transition-all duration-75 px-2 py-2 `}
             >
