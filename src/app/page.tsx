@@ -9,7 +9,7 @@ import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import ExperienceSection from '@/components/experience-section'
 import JoinTeamSection from '@/components/join-team-section'
-import CircularGallery from '@/components/circular-gallery' // Updated import
+//import CircularGallery from '@/components/circular-gallery' // Updated import
 import BentoGridBackground from '@/components/bento-grid-background' // New import
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
-        <CircularGallery /> {/* Updated component name */}
+        {/*<CircularGallery />  Updated component name */}
         <ServicesSection />
         <JoinTeamSection />
         <ContactSection />
