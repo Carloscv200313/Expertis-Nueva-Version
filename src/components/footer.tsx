@@ -6,11 +6,8 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="relative bg-slate-950 border-t border-white/10 py-16 px-6">
-      {/* Background Effects */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
-      </div>
+    <footer className="relative bg-slate-950 border-t border-white/10 py-4 px-6">
+      
 
       <div className="container mx-auto relative z-10">
         <div className="grid md:grid-cols-4 gap-8">
@@ -101,7 +98,7 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="border-t border-white/10 mt-12 pt-8 text-center"
+          className="border-t border-white/10 mt-2 pt-2 text-center"
         >
           <p className="text-white/60">
             © 2024 EXPERTIS Master Servicer & Collections. Todos los derechos reservados.

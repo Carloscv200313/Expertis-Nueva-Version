@@ -44,7 +44,7 @@ export default function HeroSection() {
                 ease: "easeInOut"
               }
             }}
-            className="w-80 h-80 mx-auto mb-8 relative"
+            className="md:w-80 md:h-80 w-64 h-64 mx-auto mb-8 relative"
           >
             <Image
               src="/LOGO-CENTRAL.png"

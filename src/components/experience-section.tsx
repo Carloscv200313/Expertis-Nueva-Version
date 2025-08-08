@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { Award, Target, Users, TrendingUp } from 'lucide-react'
 
 const achievements = [
@@ -44,14 +44,14 @@ export default function ExperienceSection() {
     <section ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
       {/* Background Image for the section */}
       <div className="absolute inset-0 z-0">
-        <Image
+        {/*<Image
           src="/IMAGEN-NEGOCIO-EXPERIENCIA.jpg"
           alt="Experiencia EXPERTIS Background"
           fill
           className="object-cover object-center"
           priority
         />
-        {/* Dark overlay for better text readability */}
+         Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-slate-950/80" />
       </div>
 
