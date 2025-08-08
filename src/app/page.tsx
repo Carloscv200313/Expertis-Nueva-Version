@@ -17,7 +17,7 @@ export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div ref={containerRef} className="relative bg-slate-950 text-white overflow-x-hidden min-h-screen">
+    <div ref={containerRef} className="relative bg-slate-950 text-white overflow-x-hidden min-h-dvh">
       {/* Bento Grid Background (replaces old dot pattern and meteor effects) */}
       <div className="fixed inset-0 z-0">
         <BentoGridBackground />
