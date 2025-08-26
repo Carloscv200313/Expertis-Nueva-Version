@@ -28,7 +28,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" ref={sectionRef} className="relative py-32 px-6">
+    <section id="contact" ref={sectionRef} className="relative pt-20 pb-8 px-6">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-slate-600/10 rounded-full blur-3xl" />
@@ -45,7 +45,7 @@ export default function ContactSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
             Contacto
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
+          <div className="w-1/4 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             ¿Necesitas optimizar tus procesos de cobranza? Contáctanos hoy mismo.
           </p>

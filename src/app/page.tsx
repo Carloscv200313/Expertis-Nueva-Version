@@ -10,7 +10,6 @@ import Footer from '@/components/footer'
 import ExperienceSection from '@/components/experience-section'
 import JoinTeamSection from '@/components/join-team-section'
 //import CircularGallery from '@/components/circular-gallery' // Updated import
-import BentoGridBackground from '@/components/bento-grid-background' // New import
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
@@ -18,26 +17,18 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className="relative bg-slate-950 text-white overflow-x-hidden min-h-dvh">
-      {/* Bento Grid Background (replaces old dot pattern and meteor effects) */}
-      <div className="fixed inset-0 z-0">
-        <BentoGridBackground />
-      </div>
-
       {/* Navigation */}
       <Navigation />
-
       {/* Main Content */}
       <main className="relative z-10">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
-        {/*<CircularGallery />  Updated component name */}
         <ServicesSection />
         <JoinTeamSection />
         <ContactSection />
         <Footer />
       </main>
-      {/* Enhanced Scroll Progress Indicator */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 z-50 origin-left"
         style={{ scaleX: scrollYProgress }}

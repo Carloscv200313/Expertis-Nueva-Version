@@ -19,9 +19,9 @@ export default function AboutSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0])
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-32 px-6 bg-section">
+    <section id="about" ref={sectionRef} className="relative pt-20 pb-8 px-6 bg-section">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 lg:gap-16 gap-4 items-center">
           {/* Image */}
           <motion.div
             ref={imageRef}
@@ -60,7 +60,7 @@ export default function AboutSection() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
                 Nosotros
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mb-8" />
+              <div className="w-1/4 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mb-8" />
             </motion.div>
 
             <motion.p

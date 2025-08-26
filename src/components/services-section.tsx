@@ -36,7 +36,7 @@ export default function ServicesSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
+    <section id="services" ref={sectionRef} className="relative pt-20 pb-8 px-6 overflow-hidden">
       {/* Light Rays Background Effect */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 animate-light-rays">
@@ -54,7 +54,7 @@ export default function ServicesSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
             Nuestros Servicios
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
+          <div className="w-1/4 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             Transformamos ideas en realidades digitales con tecnología de vanguardia
           </p>

@@ -82,7 +82,7 @@ export default function Footer() {
                   <Twitter size={20} />
                 </motion.a>
                 <motion.a
-                  href="#"
+                  href="https://www.linkedin.com/company/expertis-master-servicer-and-collections/"
                   whileHover={{ scale: 1.1, color: "#22d3ee" }}
                   className="text-white/70 hover:text-cyan-400 transition-colors"
                 >
@@ -101,7 +101,7 @@ export default function Footer() {
           className="border-t border-white/10 mt-2 pt-2 text-center"
         >
           <p className="text-white/60">
-            © 2024 EXPERTIS Master Servicer & Collections. Todos los derechos reservados.
+            © 2024 EXPERTIS Master Servicer & Collections.
           </p>
         </motion.div>
       </div>

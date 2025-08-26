@@ -33,7 +33,7 @@ export default function JoinTeamSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   return (
-    <section ref={sectionRef} className="relative py-32 px-6">
+    <section ref={sectionRef} className="relative pt-20 pb-8 px-6">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(34,211,238,0.1),transparent_50%)]" />
@@ -49,7 +49,7 @@ export default function JoinTeamSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
             Únete al Equipo
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
+          <div className="w-1/4 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             Forma parte de un equipo líder en servicios de cobranza y gestión empresarial
           </p>

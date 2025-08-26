@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import clsx from "clsx";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -30,17 +30,19 @@ export default function Navigation() {
       initial={{ y: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 2.5, ease: "easeInOut" }}
-      className={`fixed w-full z-40 transition-all duration-100 ${scrolled
-        ? `bg-black/30 backdrop-blur-md border-b border-slate-800 py-2 shadow-2xl w-auto`
-        : ` ${ isOpen ? "bg-black/30 backdrop-blur-md border-b border-slate-800": "bg-transparent py-2 " } `
-        }`}
+      className={clsx(
+        "fixed w-full z-40 transition-all duration-100",
+        scrolled && "bg-black/30 backdrop-blur-md border-b border-slate-800 py-2 shadow-2xl w-auto",
+        !scrolled && "pt-2",
+        !scrolled && isOpen && "bg-black/30 backdrop-blur-md border-b border-slate-800"
+      )}
     >
       <div className="flex items-center justify-between w-full px-10">
         {/* Desktop Menu */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={scrolled ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
           className="flex items-center"
         >
           <Link href={"/"}>
@@ -60,7 +62,7 @@ export default function Navigation() {
               href={item.href}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.4 }}
+              transition={{ delay: index * 0.2 }}
               whileHover={{
                 scale: 1.02,
                 y: -2

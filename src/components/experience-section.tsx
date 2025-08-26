@@ -41,20 +41,7 @@ export default function ExperienceSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   return (
-    <section ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
-      {/* Background Image for the section */}
-      <div className="absolute inset-0 z-0">
-        {/*<Image
-          src="/IMAGEN-NEGOCIO-EXPERIENCIA.jpg"
-          alt="Experiencia EXPERTIS Background"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-         Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-slate-950/80" />
-      </div>
-
+    <section id="experience" ref={sectionRef} className="relative pt-20 pb-8 px-6 overflow-hidden">
       <div className="container mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -65,7 +52,7 @@ export default function ExperienceSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
             Nuestra Experiencia
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
+          <div className="w-1/4 h-1 bg-gradient-to-r from-slate-600 to-slate-500 mx-auto mb-8" />
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             Años de experiencia nos respaldan en cada proyecto que emprendemos
           </p>
